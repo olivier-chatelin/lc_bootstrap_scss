@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactController!{% endblock %}
+
+{% block body %}
+    <div class="contact container w-50">
+        <div class="firstname">
+            <label for="firstname">Prénom</label>
+            <input id="firstname" type="text">
+        </div>
+        <div class="lastname">
+            <label for="lastname">Nom</label>
+            <input id="lastname" type="text">
+        </div>
+        <div class="address">
+            <label for="address">Adresse</label>
+            <input id="address" type="text">
+        </div>
+        <button class="btn btn-fb-yellow">Valider</button>
+    </div>
+
+{% endblock %}

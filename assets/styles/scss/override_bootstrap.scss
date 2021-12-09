@@ -1,0 +1,22 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+//déclaration des variables
+$fb-DBlue: #283b68;
+$fb-Blue: #679bd3;
+$fb-LBlue: #cae5f8;
+$fb-red:#e8452c;
+$fb-yellow:#fbc030;
+
+//inclusion des couleurs de la charte dans le theme bootstrap
+$custom-colors:(
+      'fb-DBlue': $fb-DBlue,
+      'fb-Blue': $fb-Blue,
+      'fb-LBlue': $fb-LBlue,
+      'fb-red':$fb-red,
+      'fb-yellow':$fb-yellow
+);
+
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+//override des composants bootstrap
+$btn-border-radius: 1000px;
